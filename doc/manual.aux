@@ -1,0 +1,336 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\babel@aux{english}{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}About {i-PI}\xspace  }{1}{chapter.1}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{intro}{{1}{1}{About \ipi }{chapter.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces  Schematic representation of the functioning of {i-PI}\xspace  {}.\relax }}{1}{figure.caption.2}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:scheme}{{1.1}{1}{Schematic representation of the functioning of \ipi {}.\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Manual structure}{1}{section.1.1}}
+\citation{feyn-hibb65book}
+\citation{ceri+10jcp,mart+99jcp}
+\citation{mark-mano08jcp,ceri+11jcp,suzu95pla,chin97pla,ceri+12prsa,pere-tuck11jcp}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Path Integral Molecular Dynamics}{2}{section.1.2}}
+\citation{cao-voth93jcp,cao-voth94jcp,crai-mano04jcp,braa-mano06jcp}
+\citation{habe+13arpc}
+\citation{mark-mano08jcp}
+\citation{mark-mano08jcp}
+\citation{mark-mano08jcp}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Implementation}{3}{section.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Automated evaluation (depend objects)}{3}{subsection.1.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces  Schematic overview of the functioning of the \emph  {depend} class used as the base for properties and physical quantities in {i-PI}\xspace  {}. A few ``primitive'' quantities -- such as atomic positions or momenta -- can be modified directly. For most properties, one defines a function that can compute based on the value of other properties. Whenever one property is modified, all the quantities that depend on it are marked as tainted, so that -- when the value of one of the properties is used, the function can be invoked and the updated value obtained. If a quantity is not marked as tainted, the cached value is returned instead. \relax }}{3}{figure.caption.3}}
+\newlabel{fig:depend}{{1.2}{3}{Schematic overview of the functioning of the \emph {depend} class used as the base for properties and physical quantities in \ipi {}. A few ``primitive'' quantities -- such as atomic positions or momenta -- can be modified directly. For most properties, one defines a function that can compute based on the value of other properties. Whenever one property is modified, all the quantities that depend on it are marked as tainted, so that -- when the value of one of the properties is used, the function can be invoked and the updated value obtained. If a quantity is not marked as tainted, the cached value is returned instead. \relax }{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.3}{\ignorespaces  Schematic representation of the different objects that are involved in the evaluation of the forces. The multiple layers and complex structure are necessary to give the possibility of decomposing the evaluation of the forces between multiple different clients and using different imaginary time partitioning (e.g. one can compute the bonded interactions using one client, and use a different client to compute the long-range electrostatic interactions, contracted on a single bead~\cite  {mark-mano08jcp}). \relax }}{4}{figure.caption.4}}
+\newlabel{fig:forces}{{1.3}{4}{Schematic representation of the different objects that are involved in the evaluation of the forces. The multiple layers and complex structure are necessary to give the possibility of decomposing the evaluation of the forces between multiple different clients and using different imaginary time partitioning (e.g. one can compute the bonded interactions using one client, and use a different client to compute the long-range electrostatic interactions, contracted on a single bead~\cite {mark-mano08jcp}). \relax }{figure.caption.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Force evaluation}{4}{subsection.1.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.3}Communication protocol}{5}{subsection.1.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.4}Internal units}{5}{subsection.1.3.4}}
+\newlabel{units}{{1.3.4}{5}{Internal units}{subsection.1.3.4}{}}
+\citation{ceri+10jcp}
+\citation{mark-mano08jcp,mark-mano08cpl}
+\citation{buss+07jcp}
+\citation{ceri+10jcp}
+\citation{ceri+09prl,ceri+10jctc}
+\citation{ceri+09prl2}
+\citation{ceri-parr10pcs}
+\citation{gle4md}
+\citation{ceri+11jcp}
+\citation{ceri-mano12prl}
+\citation{yama05jcp}
+\citation{ceri-mark13jcp}
+\citation{lin+10prl}
+\citation{crai-mano04jcp,habe+13arpc}
+\citation{cao-voth93jcp,cao-voth94jcp}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Core features}{6}{section.1.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.1}Features in version 1.0}{6}{subsection.1.4.1}}
+\citation{ceri+12prsa,jang-voth01jcp}
+\citation{kapi+16jcp2}
+\citation{polt-tkat16cs}
+\citation{kapi+18jpcb}
+\citation{liu+13jpcc,chen+16jpcl}
+\citation{chen-ceri14jcp}
+\citation{litm+17jcp}
+\citation{ross+16prl}
+\citation{ross+16prl}
+\citation{ross+16prl}
+\citation{kapi+16jcp}
+\citation{petr+15jcc}
+\citation{ross+14jcp}
+\citation{ross+18jcp}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.2}Features added in version 2.0}{7}{subsection.1.4.2}}
+\citation{ross+18jcp}
+\citation{hija+18jcp}
+\@writefile{toc}{\contentsline {section}{\numberline {1.5}Licence and credits}{8}{section.1.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.5.1}Contributors}{8}{subsection.1.5.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.6}On-line resources}{8}{section.1.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.1}Python resources}{8}{subsection.1.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.2}Client code resources}{8}{subsection.1.6.2}}
+\newlabel{librarywebsites}{{1.6.2}{8}{Client code resources}{subsection.1.6.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.3}{i-PI}\xspace  resources}{9}{subsection.1.6.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Getting started}{10}{chapter.2}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{getstarted}{{2}{10}{Getting started}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Installing {i-PI}\xspace  }{10}{section.2.1}}
+\newlabel{install}{{2.1}{10}{Installing \ipi }{section.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Requirements}{10}{subsection.2.1.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1.1}Using the setup.py module}{10}{subsubsection.2.1.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}{i-PI}\xspace  download}{11}{subsection.2.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Installing NumPy}{11}{subsection.2.1.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}PyFFTW}{12}{subsection.2.1.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Installing clients}{13}{section.2.2}}
+\newlabel{clientinstall}{{2.2}{13}{Installing clients}{section.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Patching CP2K}{13}{subsection.2.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Patching Quantum-Espresso}{13}{subsection.2.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Patching LAMMPS}{14}{subsection.2.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Writing a patch}{14}{subsection.2.2.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Running {i-PI}\xspace  }{14}{section.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Running the {i-PI}\xspace  server}{14}{subsection.2.3.1}}
+\newlabel{runningsimulations}{{2.3.1}{14}{Running the \ipi server}{subsection.2.3.1}{}}
+\citation{silv-gold78jcp}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Running the client code}{15}{subsection.2.3.2}}
+\newlabel{runningclients}{{2.3.2}{15}{Running the client code}{subsection.2.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2.1}Built-in, example client}{15}{subsubsection.2.3.2.1}}
+\newlabel{driver.x}{{2.3.2.1}{15}{Built-in, example client}{subsubsection.2.3.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2.2}CP2K}{15}{subsubsection.2.3.2.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2.3}Quantum-Espresso}{16}{subsubsection.2.3.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2.4}LAMMPS}{16}{subsubsection.2.3.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Running on a HPC system}{17}{subsection.2.3.3}}
+\newlabel{hpc}{{2.3.3}{17}{Running on a HPC system}{subsection.2.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces  Different approaches to run {i-PI}\xspace  and a number of instances of the forces code on a HPC system: a) running {i-PI}\xspace  and the clients in a single job; b) running {i-PI}\xspace  and the clients on the same system, but using different jobs, or running {i-PI}\xspace  interactively on the login node; c) running {i-PI}\xspace  on a local workstation, communicating with the clients (that can run on one or multiple HPC systems) over the internet. \relax }}{17}{figure.caption.5}}
+\newlabel{fig:running}{{2.1}{17}{Different approaches to run \ipi and a number of instances of the forces code on a HPC system: a) running \ipi and the clients in a single job; b) running \ipi and the clients on the same system, but using different jobs, or running \ipi interactively on the login node; c) running \ipi on a local workstation, communicating with the clients (that can run on one or multiple HPC systems) over the internet. \relax }{figure.caption.5}{}}
+\citation{lverlet67pr}
+\citation{silv-gold78jcp}
+\citation{mill-mano05jcp}
+\citation{mart+99jcp}
+\citation{lin+10prl}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Testing the install}{18}{section.2.4}}
+\newlabel{tests}{{2.4}{18}{Testing the install}{section.2.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}test the installation with `nose`}{18}{subsection.2.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}test cases with input files}{18}{subsection.2.4.2}}
+\citation{habe+09jcp}
+\citation{ceri-mano12prl}
+\citation{mark-mano08jcp}
+\citation{lind-broi10prb}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}User guide}{20}{chapter.3}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{userguide}{{3}{20}{User guide}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Input files}{20}{section.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Input file format and structure}{20}{subsection.3.1.1}}
+\newlabel{ifilestructure}{{3.1.1}{20}{Input file format and structure}{subsection.3.1.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.1}Overriding default units}{21}{subsubsection.3.1.1.1}}
+\newlabel{inputunits}{{3.1.1.1}{21}{Overriding default units}{subsubsection.3.1.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Initialization section}{22}{subsection.3.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.1}Configuration files}{22}{subsubsection.3.1.2.1}}
+\newlabel{configfile}{{3.1.2.1}{22}{Configuration files}{subsubsection.3.1.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2.2}Initialization from checkpoint files}{23}{subsubsection.3.1.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Output files}{23}{section.3.2}}
+\newlabel{outputfiles}{{3.2}{23}{Output files}{section.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Properties}{23}{subsection.3.2.1}}
+\newlabel{propertyfile}{{3.2.1}{23}{Properties}{subsection.3.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Trajectory files}{31}{subsection.3.2.2}}
+\newlabel{trajectories}{{3.2.2}{31}{Trajectory files}{subsection.3.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Checkpoint files}{32}{subsection.3.2.3}}
+\newlabel{checkpoint}{{3.2.3}{32}{Checkpoint files}{subsection.3.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3.1}Soft exit and RESTART}{33}{subsubsection.3.2.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Distributed execution}{33}{section.3.3}}
+\newlabel{distrib}{{3.3}{33}{Distributed execution}{section.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Communication protocol}{33}{subsection.3.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Parallelization}{34}{subsection.3.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Sockets}{35}{subsection.3.3.3}}
+\newlabel{sockets}{{3.3.3}{35}{Sockets}{subsection.3.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}Running {i-PI}\xspace  over the network}{36}{subsection.3.3.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.4.1}Understanding the network layout}{36}{subsubsection.3.3.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces  A schematic representation of the network layout one typically finds when running {i-PI}\xspace  and the clients on a HPC system and/or on a local workstation. \relax }}{36}{figure.caption.6}}
+\newlabel{fig:network}{{3.1}{36}{A schematic representation of the network layout one typically finds when running \ipi and the clients on a HPC system and/or on a local workstation. \relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.4.2}ssh tunnelling}{37}{subsubsection.3.3.4.2}}
+\newlabel{ssh_sockets}{{3.3.4.2}{37}{ssh tunnelling}{subsubsection.3.3.4.2}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Input reference}{39}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{hierarchy}{{4}{39}{Input reference}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}SIMULATION}{39}{section.4.1}}
+\newlabel{SIMULATION}{{4.1}{39}{SIMULATION}{section.4.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}FORCEFIELD}{42}{section.4.2}}
+\newlabel{FORCEFIELD}{{4.2}{42}{FORCEFIELD}{section.4.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}FFSOCKET}{43}{section.4.3}}
+\newlabel{FFSOCKET}{{4.3}{43}{FFSOCKET}{section.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}FFDEBYE}{44}{section.4.4}}
+\newlabel{FFDEBYE}{{4.4}{44}{FFDEBYE}{section.4.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}FFLJ}{45}{section.4.5}}
+\newlabel{FFLJ}{{4.5}{45}{FFLJ}{section.4.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.6}FFPLUMED}{46}{section.4.6}}
+\newlabel{FFPLUMED}{{4.6}{46}{FFPLUMED}{section.4.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.7}FFYAFF}{47}{section.4.7}}
+\newlabel{FFYAFF}{{4.7}{47}{FFYAFF}{section.4.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.8}SYSTEM}{49}{section.4.8}}
+\newlabel{SYSTEM}{{4.8}{49}{SYSTEM}{section.4.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.9}SMOTION}{50}{section.4.9}}
+\newlabel{SMOTION}{{4.9}{50}{SMOTION}{section.4.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.10}REMD}{50}{section.4.10}}
+\newlabel{REMD}{{4.10}{50}{REMD}{section.4.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.11}META}{51}{section.4.11}}
+\newlabel{META}{{4.11}{51}{META}{section.4.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.12}MOTION}{51}{section.4.12}}
+\newlabel{MOTION}{{4.12}{51}{MOTION}{section.4.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.13}DYNAMICS}{53}{section.4.13}}
+\newlabel{DYNAMICS}{{4.13}{53}{DYNAMICS}{section.4.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.14}ALCHEMY}{54}{section.4.14}}
+\newlabel{ALCHEMY}{{4.14}{54}{ALCHEMY}{section.4.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.15}INSTANTON}{55}{section.4.15}}
+\newlabel{INSTANTON}{{4.15}{55}{INSTANTON}{section.4.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.16}PHONONS}{59}{section.4.16}}
+\newlabel{PHONONS}{{4.16}{59}{PHONONS}{section.4.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.17}GEOP}{60}{section.4.17}}
+\newlabel{GEOP}{{4.17}{60}{GEOP}{section.4.17}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.18}NEB}{64}{section.4.18}}
+\newlabel{NEB}{{4.18}{64}{NEB}{section.4.18}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.19}INITIALIZER}{67}{section.4.19}}
+\newlabel{INITIALIZER}{{4.19}{67}{INITIALIZER}{section.4.19}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.20}INITFILE}{70}{section.4.20}}
+\newlabel{INITFILE}{{4.20}{70}{INITFILE}{section.4.20}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.21}INITPOSITIONS}{70}{section.4.21}}
+\newlabel{INITPOSITIONS}{{4.21}{70}{INITPOSITIONS}{section.4.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.22}INITMOMENTA}{70}{section.4.22}}
+\newlabel{INITMOMENTA}{{4.22}{70}{INITMOMENTA}{section.4.22}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.23}INITVELOCITIES}{71}{section.4.23}}
+\newlabel{INITVELOCITIES}{{4.23}{71}{INITVELOCITIES}{section.4.23}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.24}INITLABELS}{71}{section.4.24}}
+\newlabel{INITLABELS}{{4.24}{71}{INITLABELS}{section.4.24}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.25}INITMASSES}{71}{section.4.25}}
+\newlabel{INITMASSES}{{4.25}{71}{INITMASSES}{section.4.25}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.26}INITCELL}{72}{section.4.26}}
+\newlabel{INITCELL}{{4.26}{72}{INITCELL}{section.4.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.27}INITTHERMO}{72}{section.4.27}}
+\newlabel{INITTHERMO}{{4.27}{72}{INITTHERMO}{section.4.27}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.28}ENSEMBLE}{72}{section.4.28}}
+\newlabel{ENSEMBLE}{{4.28}{72}{ENSEMBLE}{section.4.28}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.29}FORCES}{74}{section.4.29}}
+\newlabel{FORCES}{{4.29}{74}{FORCES}{section.4.29}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.30}FORCECOMPONENT}{75}{section.4.30}}
+\newlabel{FORCECOMPONENT}{{4.30}{75}{FORCECOMPONENT}{section.4.30}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.31}CELL}{76}{section.4.31}}
+\newlabel{CELL}{{4.31}{76}{CELL}{section.4.31}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.32}BEADS}{76}{section.4.32}}
+\newlabel{BEADS}{{4.32}{76}{BEADS}{section.4.32}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.33}ATOMS}{78}{section.4.33}}
+\newlabel{ATOMS}{{4.33}{78}{ATOMS}{section.4.33}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.34}NORMALMODES}{79}{section.4.34}}
+\newlabel{NORMALMODES}{{4.34}{79}{NORMALMODES}{section.4.34}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.35}NMFREQUENCIES}{81}{section.4.35}}
+\newlabel{NMFREQUENCIES}{{4.35}{81}{NMFREQUENCIES}{section.4.35}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.36}BAROSTAT}{81}{section.4.36}}
+\newlabel{BAROSTAT}{{4.36}{81}{BAROSTAT}{section.4.36}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.37}THERMOSTATS}{83}{section.4.37}}
+\newlabel{THERMOSTATS}{{4.37}{83}{THERMOSTATS}{section.4.37}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.38}PRNG}{86}{section.4.38}}
+\newlabel{PRNG}{{4.38}{86}{PRNG}{section.4.38}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.39}OUTPUTS}{87}{section.4.39}}
+\newlabel{OUTPUTS}{{4.39}{87}{OUTPUTS}{section.4.39}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.40}CHECKPOINT}{89}{section.4.40}}
+\newlabel{CHECKPOINT}{{4.40}{89}{CHECKPOINT}{section.4.40}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.41}PROPERTIES}{89}{section.4.41}}
+\newlabel{PROPERTIES}{{4.41}{89}{PROPERTIES}{section.4.41}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.42}TRAJECTORY}{90}{section.4.42}}
+\newlabel{TRAJECTORY}{{4.42}{90}{TRAJECTORY}{section.4.42}{}}
+\citation{silv-gold78jcp}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}A simple tutorial}{91}{chapter.5}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{tutorial}{{5}{91}{A simple tutorial}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Part 1 - \emph  {NVT} Equilibration run}{91}{section.5.1}}
+\newlabel{part1}{{5.1}{91}{Part 1 - \emph {NVT} Equilibration run}{section.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Client code}{91}{subsection.5.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.2}Creating the xml input file}{92}{subsection.5.1.2}}
+\citation{silv-gold78jcp}
+\citation{mill-mano05jcp}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2.1}Initializing the configurations}{93}{subsubsection.5.1.2.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2.2}Creating the server socket}{96}{subsubsection.5.1.2.2}}
+\citation{ceri+10jcp}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2.3}Generating the correct dynamics}{97}{subsubsection.5.1.2.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2.4}Customizing the output}{98}{subsubsection.5.1.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.3}Running the simulation}{101}{subsection.5.1.3}}
+\newlabel{run1}{{5.1.3}{101}{Running the simulation}{subsection.5.1.3}{}}
+\citation{silv-gold78jcp}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.4}Output data}{102}{subsection.5.1.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Part 2 - \emph  {NPT} simulation}{102}{section.5.2}}
+\newlabel{part2}{{5.2}{102}{Part 2 - \emph {NPT} simulation}{section.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Modifying the RESTART file}{102}{subsection.5.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Initialization from RESTART}{104}{subsection.5.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Running the simulation}{104}{subsection.5.2.3}}
+\citation{mart+99jcp}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Part 3 - A fully converged simulation}{105}{section.5.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Troubleshooting}{106}{chapter.6}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{trouble}{{6}{106}{Troubleshooting}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Input errors}{106}{section.6.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Initialization errors}{107}{section.6.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Output errors}{109}{section.6.3}}
+\bibstyle{elsarticle-num-names}
+\bibdata{mybib}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Socket errors}{110}{section.6.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Mathematical errors}{110}{section.6.5}}
+\bibcite{feyn-hibb65book}{{1}{1964}{{Feynman and Hibbs}}{{}}}
+\bibcite{ceri+10jcp}{{2}{2010}{{Ceriotti et~al.}}{{Ceriotti, Parrinello, Markland, and Manolopoulos}}}
+\bibcite{mart+99jcp}{{3}{1999}{{Martyna et~al.}}{{Martyna, Hughes, and Tuckerman}}}
+\bibcite{mark-mano08jcp}{{4}{2008}{{Markland and Manolopoulos}}{{}}}
+\bibcite{ceri+11jcp}{{5}{2011}{{Ceriotti et~al.}}{{Ceriotti, Manolopoulos, and Parrinello}}}
+\bibcite{suzu95pla}{{6}{1995}{{Suzuki}}{{}}}
+\bibcite{chin97pla}{{7}{1997}{{Chin}}{{}}}
+\bibcite{ceri+12prsa}{{8}{2011}{{Ceriotti et~al.}}{{Ceriotti, Brain, Riordan, and Manolopoulos}}}
+\bibcite{pere-tuck11jcp}{{9}{2011}{{P{\'{e}}rez and Tuckerman}}{{}}}
+\bibcite{cao-voth93jcp}{{10}{1993}{{Cao and Voth}}{{}}}
+\bibcite{cao-voth94jcp}{{11}{1994}{{Cao and Voth}}{{}}}
+\bibcite{crai-mano04jcp}{{12}{2004}{{Craig and Manolopoulos}}{{}}}
+\bibcite{braa-mano06jcp}{{13}{2006}{{Braams and Manolopoulos}}{{}}}
+\bibcite{habe+13arpc}{{14}{2013}{{Habershon et~al.}}{{Habershon, Manolopoulos, Markland, and Miller}}}
+\bibcite{mark-mano08cpl}{{15}{2008}{{Markland and Manolopoulos}}{{}}}
+\bibcite{buss+07jcp}{{16}{2007}{{Bussi et~al.}}{{Bussi, Donadio, and Parrinello}}}
+\bibcite{ceri+09prl}{{17}{2009}{{Ceriotti et~al.}}{{Ceriotti, Bussi, and Parrinello}}}
+\bibcite{ceri+10jctc}{{18}{2010}{{Ceriotti et~al.}}{{Ceriotti, Bussi, and Parrinello}}}
+\bibcite{ceri+09prl2}{{19}{2009}{{Ceriotti et~al.}}{{Ceriotti, Bussi, and Parrinello}}}
+\bibcite{ceri-parr10pcs}{{20}{2010}{{Ceriotti and Parrinello}}{{}}}
+\bibcite{gle4md}{{21}{2010}{{Ceriotti}}{{}}}
+\bibcite{ceri-mano12prl}{{22}{2012}{{Ceriotti and Manolopoulos}}{{}}}
+\bibcite{yama05jcp}{{23}{2005}{{Yamamoto}}{{}}}
+\bibcite{ceri-mark13jcp}{{24}{2013}{{Ceriotti and Markland}}{{}}}
+\bibcite{lin+10prl}{{25}{2010}{{Lin et~al.}}{{Lin, Morrone, Car, and Parrinello}}}
+\bibcite{jang-voth01jcp}{{26}{2001}{{Jang and Voth}}{{}}}
+\bibcite{kapi+16jcp2}{{27}{2016}{{Kapil et~al.}}{{Kapil, Behler, and Ceriotti}}}
+\bibcite{polt-tkat16cs}{{28}{2016}{{Poltavsky and Tkatchenko}}{{}}}
+\bibcite{kapi+18jpcb}{{29}{2018}{{Kapil et~al.}}{{Kapil, Cuzzocrea, and Ceriotti}}}
+\bibcite{liu+13jpcc}{{30}{2013}{{Liu et~al.}}{{Liu, Andino, Miller, Chen, Wilkins, Ceriotti, and Manolopoulos}}}
+\bibcite{chen+16jpcl}{{31}{2016}{{Cheng et~al.}}{{Cheng, Behler, and Ceriotti}}}
+\bibcite{chen-ceri14jcp}{{32}{2014}{{Cheng and Ceriotti}}{{}}}
+\bibcite{litm+17jcp}{{33}{2018}{{Litman et~al.}}{{Litman, Donadio, Ceriotti, and Rossi}}}
+\bibcite{ross+16prl}{{34}{2016}{{Rossi et~al.}}{{Rossi, Gasparotto, and Ceriotti}}}
+\bibcite{kapi+16jcp}{{35}{2016}{{Kapil et~al.}}{{Kapil, VandeVondele, and Ceriotti}}}
+\bibcite{petr+15jcc}{{36}{2016}{{Petraglia et~al.}}{{Petraglia, Nicola{\"{i}}, Wodrich, Ceriotti, and Corminboeuf}}}
+\bibcite{ross+14jcp}{{37}{2014}{{Rossi et~al.}}{{Rossi, Ceriotti, and Manolopoulos}}}
+\bibcite{ross+18jcp}{{38}{2018}{{Rossi et~al.}}{{Rossi, Kapil, and Ceriotti}}}
+\bibcite{hija+18jcp}{{39}{2018}{{Hijazi et~al.}}{{Hijazi, Wilkins, and Ceriotti}}}
+\bibcite{silv-gold78jcp}{{40}{1978}{{Silvera and Goldman}}{{}}}
+\bibcite{lverlet67pr}{{41}{1967}{{Verlet}}{{}}}
+\bibcite{mill-mano05jcp}{{42}{2005}{{Miller and Manolopoulos}}{{}}}
+\bibcite{habe+09jcp}{{43}{2009}{{Habershon et~al.}}{{Habershon, Markland, and Manolopoulos}}}
+\bibcite{lind-broi10prb}{{44}{2010}{{Lindsay and Broido}}{{}}}

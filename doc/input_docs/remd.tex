@@ -1,0 +1,33 @@
+\section{REMD}
+\label{REMD}
+\begin{ipifield}{}%
+{Replica Exchange}%
+{}%
+{}
+\begin{ipifield}{stride}%
+{Every how often to try exchanges (on average).}%
+{default:  1.0 ; data type: float; }%
+{}
+\end{ipifield}
+\begin{ipifield}{krescale}%
+{Rescale kinetic energy upon exchanges.}%
+{default:  True ; data type: boolean; }%
+{}
+\end{ipifield}
+\begin{ipifield}{repindex}%
+{List of current indices of the replicas compared to the starting indices}%
+{default:  [ ] ; data type: integer; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{swapfile}%
+{File to keep track of replica exchanges}%
+{default: `PARATEMP'; data type: string; }%
+{}
+\end{ipifield}
+\end{ipifield}

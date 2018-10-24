@@ -1,0 +1,57 @@
+\section{PHONONS}
+\label{PHONONS}
+\begin{ipifield}{}%
+{Fill in.}%
+{}%
+{\ipiitem{mode}%
+{The algorithm to be used: finite differences (fd), normal modes finite differences (nmfd), and energy-scaled normal mode finite differences (enmfd).}%
+{default: `fd'; data type: string; options: `fd', `nmfd', `enmfd'; }%
+}
+\begin{ipifield}{asr}%
+{Removes the zero frequency vibrational modes depending on the symmerty of the system.}%
+{default: `none'; data type: string; options: `none', `poly', `lin', `crystal'; }%
+{}
+\end{ipifield}
+\begin{ipifield}{prefix}%
+{Prefix of the output files.}%
+{default: `PHONONS'; data type: string; }%
+{}
+\end{ipifield}
+\begin{ipifield}{dynmat}%
+{Portion of the dynamical matrix known up to now.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{output\_shift}%
+{Shift by the dynamical matrix diagonally before outputting.}%
+{default:  0.0 ; data type: float; }%
+{}
+\end{ipifield}
+\begin{ipifield}{energy\_shift}%
+{The finite displacement in energy used to compute derivative of force.}%
+{default:  0.0 ; data type: float; }%
+{}
+\end{ipifield}
+\begin{ipifield}{refdynmat}%
+{Portion of the refined dynamical matrix known up to now.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{pos\_shift}%
+{The finite displacement in position used to compute derivative of force.}%
+{default:  0.01 ; data type: float; }%
+{}
+\end{ipifield}
+\end{ipifield}

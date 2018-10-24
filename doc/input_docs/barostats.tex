@@ -1,0 +1,58 @@
+\section{BAROSTAT}
+\label{BAROSTAT}
+\begin{ipifield}{}%
+{Simulates an external pressure bath.}%
+{}%
+{\ipiitem{mode}%
+{The type of barostat.  Currently, only a 'isotropic' barostat is implemented, that combines
+                                    ideas from the Bussi-Zykova-Parrinello barostat for classical MD with ideas from the
+                                    Martyna-Hughes-Tuckerman centroid barostat for PIMD; see Ceriotti, More, Manolopoulos, Comp. Phys. Comm. 2013 for
+                                    implementation details.}%
+{default: `dummy'; data type: string; options: `dummy', `isotropic', `anisotropic', `sc-isotropic'; }%
+}
+\begin{ipifield}{tau}%
+{The time constant associated with the dynamics of the piston.}%
+{dimension: time; default:  1.0 ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+}
+\end{ipifield}
+\begin{ipifield}{\hyperref[CELL]{h0}}%
+{Reference cell for Parrinello-Rahman-like barostats.}%
+{dimension: length; default: 
+      [0. 0. 0. 0. 0. 0. 0. 0. 0.]; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (3, 3) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{\hyperref[THERMOSTATS]{thermostat}}%
+{The thermostat for the cell. Keeps the cell velocity distribution at the correct temperature. Note that the 'pile\_l', 'pile\_g', 'nm\_gle' and 'nm\_gle\_g' options will not work for this thermostat.}%
+{}%
+{\ipiitem{mode}%
+{The style of thermostatting. 'langevin' specifies a white noise langevin equation to be attached to the cartesian representation of the momenta. 'svr' attaches a velocity rescaling thermostat to the cartesian representation of the momenta. Both 'pile\_l' and 'pile\_g' attaches a white noise langevin thermostat to the normal mode representation, with 'pile\_l' attaching a local langevin thermostat to the centroid mode and 'pile\_g' instead attaching a global velocity rescaling thermostat. 'gle' attaches a coloured noise langevin thermostat to the cartesian representation of the momenta, 'nm\_gle' attaches a coloured noise langevin thermostat to the normal mode representation of the momenta and a langevin thermostat to the centroid and 'nm\_gle\_g' attaches a gle thermostat to the normal modes and a svr thermostat to the centroid. 'cl' represents a modified langevin thermostat which compensates for additional white noise from noisy forces or for dissipative effects. 'multiple' is a special thermostat mode, in which one can define multiple thermostats \_inside\_ the thermostat tag.}%
+{data type: string; options: `', `langevin', `svr', `pile\_l', `pile\_g', `gle', `nm\_gle', `nm\_gle\_g', `cl', `multi'; }%
+}
+\end{ipifield}
+\begin{ipifield}{p}%
+{Momentum (or momenta) of the piston.}%
+{dimension: momentum; default:  [ ] ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\end{ipifield}

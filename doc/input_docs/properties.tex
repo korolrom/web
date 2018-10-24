@@ -1,0 +1,22 @@
+\section{PROPERTIES}
+\label{PROPERTIES}
+\begin{ipifield}{}%
+{This class deals with the output of properties to one file. Between each property tag there should be an array of strings, each of which specifies one property to be output.}%
+{data type: string; }%
+{\ipiitem{filename}%
+{A string to specify the name of the file that is output. The file name is given by 'prefix'.'filename' + format\_specifier. The format specifier may also include a number if multiple similar files are output.}%
+{default: `out'; data type: string; }%
+\ipiitem{stride}%
+{The number of steps between successive writes.}%
+{default:  1 ; data type: integer; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+\ipiitem{flush}%
+{How often should streams be flushed. 1 means each time, zero means never.}%
+{default:  1 ; data type: integer; }%
+}
+\end{ipifield}

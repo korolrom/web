@@ -1,0 +1,15 @@
+# column   1     --> step : The current simulation time step.
+# column   2     --> time{picosecond} : The elapsed simulation time.
+# column   3     --> conserved : The value of the conserved energy quantity per bead.
+# column   4     --> kinetic_md(1) : The kinetic energy of the (extended) classical system.
+# column   5     --> kinetic_md(2) : The kinetic energy of the (extended) classical system.
+# column   6     --> kinetic_md(0) : The kinetic energy of the (extended) classical system.
+# column   7     --> kinetic_md(O) : The kinetic energy of the (extended) classical system.
+# column   8     --> kinetic_md(H) : The kinetic energy of the (extended) classical system.
+# column   9     --> kinetic_md : The kinetic energy of the (extended) classical system.
+    0.00000000e+00     0.00000000e+00    -1.64238491e-01     1.07256711e-03     5.55775989e-03     3.80405089e-04     4.36970297e-02     9.47030682e-02     1.38400098e-01   
+    4.00000000e+00     1.00000000e-03    -1.62651451e-01     5.13264302e-04     4.41130145e-03     3.41166693e-04     3.41166693e-04     4.92456576e-03     5.26573245e-03   
+    8.00000000e+00     2.00000000e-03    -1.61061057e-01     3.63333585e-04     3.52016731e-03     4.44296865e-04     4.44296865e-04     3.88350089e-03     4.32779776e-03   
+    1.20000000e+01     3.00000000e-03    -1.59478685e-01     4.54108226e-04     2.91598090e-03     6.29351402e-04     6.29351402e-04     3.37008913e-03     3.99944053e-03   
+    1.60000000e+01     4.00000000e-03    -1.57899919e-01     7.42497350e-04     2.75261393e-03     7.56063422e-04     7.56063422e-04     3.49511128e-03     4.25117470e-03   
+    2.00000000e+01     5.00000000e-03    -1.56309356e-01     1.96795801e-04     2.34515225e-03     6.12622869e-04     6.12622869e-04     2.54194805e-03     3.15457092e-03   

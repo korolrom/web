@@ -1,0 +1,19 @@
+# column   1     --> step : The current simulation time step.
+# column   2     --> time{picosecond} : The elapsed simulation time.
+# column   3     --> temperature{kelvin}(1) : The current temperature, as obtained from the MD kinetic energy.
+# column   4     --> temperature{kelvin}(2) : The current temperature, as obtained from the MD kinetic energy.
+# column   5     --> temperature{kelvin}(0) : The current temperature, as obtained from the MD kinetic energy.
+# column   6     --> temperature{kelvin}(O) : The current temperature, as obtained from the MD kinetic energy.
+# column   7     --> temperature{kelvin}(H) : The current temperature, as obtained from the MD kinetic energy.
+# column   8     --> temperature{kelvin} : The current temperature, as obtained from the MD kinetic energy.
+    0.00000000e+00     0.00000000e+00     2.97614487e+02     3.60274354e+02     1.75323857e+02     1.75323857e+02     3.28944421e+02     2.77737566e+02   
+    4.00000000e+00     1.00000000e-03     2.94794431e+02     3.24894308e+02     2.59041648e+02     2.59041648e+02     3.09844370e+02     2.92910129e+02   
+    8.00000000e+00     2.00000000e-03     1.86109465e+02     1.46777381e+02     2.60253940e+02     2.60253940e+02     1.66443423e+02     1.97713596e+02   
+    1.20000000e+01     3.00000000e-03     1.45874879e+02     9.52087812e+01     2.38762614e+02     2.38762614e+02     1.20541830e+02     1.59948758e+02   
+    1.60000000e+01     4.00000000e-03     1.13110213e+02     1.97103080e+02     2.14881810e+02     2.14881810e+02     1.55106647e+02     1.75031701e+02   
+    2.00000000e+01     5.00000000e-03     1.03224302e+02     2.92721181e+02     1.90418656e+02     1.90418656e+02     1.97972742e+02     1.95454713e+02   
+    2.40000000e+01     6.00000000e-03     1.49735256e+02     3.87950250e+02     1.88312372e+02     1.88312372e+02     2.68842753e+02     2.41999293e+02   
+    2.80000000e+01     7.00000000e-03     1.92051076e+02     2.70982249e+02     1.50253085e+02     1.50253085e+02     2.31516662e+02     2.04428803e+02   
+    3.20000000e+01     8.00000000e-03     2.02735350e+02     2.29413441e+02     1.27492068e+02     1.27492068e+02     2.16074395e+02     1.86546953e+02   
+    3.60000000e+01     9.00000000e-03     1.77321265e+02     3.50441073e+02     1.34781797e+02     1.34781797e+02     2.63881169e+02     2.20848045e+02   
+    4.00000000e+01     1.00000000e-02     2.67911795e+02     3.11982186e+02     1.46898740e+02     1.46898740e+02     2.89946991e+02     2.42264241e+02   

@@ -1,0 +1,10 @@
+# column   1     --> step : The current simulation time step.
+# column   2     --> time{picosecond} : The elapsed simulation time.
+# column   3     --> conserved : The value of the conserved energy quantity per bead.
+# column   4     --> temperature{kelvin} : The current temperature, as obtained from the MD kinetic energy.
+# column   5     --> kinetic_cv : The centroid-virial quantum kinetic energy of the physical system.
+# column   6     --> potential : The physical system potential energy.
+# column   7     --> pressure_cv : The quantum estimator for pressure of the physical system.
+# column   8     --> volume : The volume of the cell box.
+# column   9     --> ensemble_temperature : The target temperature for the current ensemble
+    0.00000000e+00     0.00000000e+00     6.53468072e+00     2.63207311e+02     2.37131122e-01    -1.14486036e+00     2.83313425e-06     1.32199245e+04     8.23371952e-04   

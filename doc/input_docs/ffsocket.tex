@@ -1,0 +1,61 @@
+\section{FFSOCKET}
+\label{FFSOCKET}
+\begin{ipifield}{}%
+{Deals with the assigning of force calculation jobs to different driver codes, and collecting the data, using a socket for the data communication.}%
+{}%
+{\ipiitem{pbc}%
+{Applies periodic boundary conditions to the atoms coordinates before passing them on to the driver code.}%
+{default:  True ; data type: boolean; }%
+\ipiitem{mode}%
+{Specifies whether the driver interface will listen onto a internet socket [inet] or onto a unix socket [unix].}%
+{default: `inet'; data type: string; options: `unix', `inet'; }%
+\ipiitem{name}%
+{Mandatory. The name by which the forcefield will be identified in the System forces section.}%
+{data type: string; }%
+\ipiitem{matching}%
+{Specifies whether requests should be dispatched to any client, or automatically matched to the same client when possible [auto].}%
+{default: `auto'; data type: string; options: `auto', `any'; }%
+}
+\begin{ipifield}{latency}%
+{The number of seconds the polling thread will wait between exhamining the list of requests.}%
+{default:  0.01 ; data type: float; }%
+{}
+\end{ipifield}
+\begin{ipifield}{timeout}%
+{This gives the number of seconds before assuming a calculation has died. If 0 there is no timeout.}%
+{default:  0.0 ; data type: float; }%
+{}
+\end{ipifield}
+\begin{ipifield}{parameters}%
+{The parameters of the force field}%
+{default:  \{ \} ; data type: dictionary; }%
+{}
+\end{ipifield}
+\begin{ipifield}{address}%
+{This gives the server address that the socket will run on.}%
+{default: `localhost'; data type: string; }%
+{}
+\end{ipifield}
+\begin{ipifield}{activelist}%
+{List with indexes of the atoms that this socket is taking care of.    Default: all (corresponding to -1)}%
+{default: 
+      [-1]; data type: integer; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (1,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{slots}%
+{This gives the number of client codes that can queue at any one time.}%
+{default:  4 ; data type: integer; }%
+{}
+\end{ipifield}
+\begin{ipifield}{port}%
+{This gives the port number that defines the socket.}%
+{default:  65535 ; data type: integer; }%
+{}
+\end{ipifield}
+\end{ipifield}

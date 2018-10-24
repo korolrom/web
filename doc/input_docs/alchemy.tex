@@ -1,0 +1,31 @@
+\section{ALCHEMY}
+\label{ALCHEMY}
+\begin{ipifield}{}%
+{Holds all the information for doing Monte Carlo alchemical exchange moves. }%
+{}%
+{\ipiitem{mode}%
+{ }%
+{default: `dummy'; data type: string; options: `dummy'; }%
+}
+\begin{ipifield}{names}%
+{The names of the atoms to be to exchanged, in the format [name1, name2, \ldots  ].}%
+{default:  [ ] ; data type: string; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{nxc}%
+{The average number of exchanges per step to be attempted }%
+{default:  1 ; data type: float; }%
+{}
+\end{ipifield}
+\begin{ipifield}{ealc}%
+{The contribution to the conserved quantity for the alchemical exchanger}%
+{default:  0.0 ; data type: float; }%
+{}
+\end{ipifield}
+\end{ipifield}

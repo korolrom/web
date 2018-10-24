@@ -1,0 +1,37 @@
+\section{FORCECOMPONENT}
+\label{FORCECOMPONENT}
+\begin{ipifield}{}%
+{The class that deals with how each forcefield contributes to the overall potential, force and virial calculation.}%
+{}%
+{\ipiitem{forcefield}%
+{Mandatory. The name of the forcefield this force is referring to.}%
+{default: `'; data type: string; }%
+\ipiitem{fd\_epsilon}%
+{The finite displacement to be used for calculaing the Suzuki-Chin contribution of the force. If the value is negative, a centered finite-difference scheme will be used. [in bohr]}%
+{default:  -0.001 ; data type: float; }%
+\ipiitem{name}%
+{An optional name to refer to this force component.}%
+{default: `'; data type: string; }%
+\ipiitem{weight}%
+{A scaling factor for this forcefield, to be applied before adding the force calculated by this forcefield to the total force.}%
+{default:  1.0 ; data type: float; }%
+\ipiitem{nbeads}%
+{If the forcefield is to be evaluated on a contracted ring polymer, this gives the number of beads that are used. If not specified, the forcefield will be evaluated on the full ring polymer.}%
+{default:  0 ; data type: integer; }%
+}
+\begin{ipifield}{mts\_weights}%
+{The weight of force in each mts level starting from outer.}%
+{dimension: force; default: 
+      [1.]; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (1,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\end{ipifield}

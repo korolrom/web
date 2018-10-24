@@ -1,0 +1,18 @@
+# column   1     --> step : The current simulation time step.
+# column   2     --> time{picosecond} : The elapsed simulation time.
+# column   3     --> conserved{electronvolt} : The value of the conserved energy quantity per bead.
+# column   4     --> temperature{kelvin} : The current temperature, as obtained from the MD kinetic energy.
+# column   5     --> kinetic_cv{electronvolt} : The centroid-virial quantum kinetic energy of the physical system.
+# column   6     --> potential{electronvolt} : The physical system potential energy.
+# column   7     --> pressure_cv{megapascal} : The quantum estimator for pressure of the physical system.
+    0.00000000e+00     0.00000000e+00    -3.49480907e+01     2.98097912e+02     2.51281700e+01    -5.99072869e+01    -7.14478499e+02   
+    1.00000000e+00     5.00000000e-04    -3.49958962e+01     3.20302008e+02     2.51281700e+01    -6.19980635e+01    -6.92056537e+02   
+    2.00000000e+00     1.00000000e-03    -3.51674323e+01     3.91403698e+02     2.51281700e+01    -6.83519758e+01    -7.24585368e+02   
+    3.00000000e+00     1.50000000e-03    -3.53710589e+01     4.85087475e+02     2.51281700e+01    -7.63668818e+01    -7.19378804e+02   
+    4.00000000e+00     2.00000000e-03    -3.55199336e+01     5.58872781e+02     2.51281700e+01    -8.28923298e+01    -5.94367369e+02   
+    5.00000000e+00     2.50000000e-03    -3.55743845e+01     5.86277342e+02     2.51281700e+01    -8.56556714e+01    -2.98267385e+02   
+    6.00000000e+00     3.00000000e-03    -3.55173098e+01     5.61809592e+02     2.51281700e+01    -8.39042068e+01     1.70868220e+02   
+    7.00000000e+00     3.50000000e-03    -3.53521779e+01     4.99376916e+02     2.51281700e+01    -7.87340202e+01     6.95041699e+02   
+    8.00000000e+00     4.00000000e-03    -3.51458054e+01     4.31132073e+02     2.51281700e+01    -7.29479567e+01     1.13292109e+03   
+    9.00000000e+00     4.50000000e-03    -3.50283744e+01     3.95917455e+02     2.51281700e+01    -6.97335523e+01     1.34988377e+03   
+    1.00000000e+01     5.00000000e-03    -3.50796530e+01     4.09234648e+02     2.51281700e+01    -7.08978571e+01     1.25645595e+03   

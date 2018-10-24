@@ -1,0 +1,118 @@
+\section{NEB}
+\label{NEB}
+\begin{ipifield}{}%
+{Contains the required parameters for performing nudged elastic band (NEB) calculations}%
+{}%
+{\ipiitem{mode}%
+{The geometry optimization algorithm to be used}%
+{default: `lbfgs'; data type: string; options: `sd', `cg', `bfgs', `lbfgs'; }%
+}
+\begin{ipifield}{biggest\_step}%
+{The maximum step size for (L)-BFGS line minimizations.}%
+{default:  100.0 ; data type: float; }%
+{}
+\end{ipifield}
+\begin{ipifield}{scale\_lbfgs}%
+{Scale choice for the initial hessian.
+                                            0 identity.
+                                            1 Use first member of position/gradient list.
+                                            2 Use last  member of position/gradient list.}%
+{default:  2 ; data type: integer; }%
+{}
+\end{ipifield}
+\begin{ipifield}{corrections\_lbfgs}%
+{The number of past vectors to store for L-BFGS.}%
+{default:  5 ; data type: integer; }%
+{}
+\end{ipifield}
+\begin{ipifield}{tolerances}%
+{Generic input value}%
+{}%
+{}
+\end{ipifield}
+\begin{ipifield}{glist\_lbfgs}%
+{List of previous gradient differences for L-BFGS, if known.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{spring}%
+{Uniform or variable spring constants along the elastic band}%
+{}%
+{}
+\end{ipifield}
+\begin{ipifield}{old\_direction}%
+{The previous direction.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{old\_force}%
+{The previous force in an optimization step.}%
+{dimension: force; default:  [ ] ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{qlist\_lbfgs}%
+{List of previous position differences for L-BFGS, if known.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{invhessian\_bfgs}%
+{Approximate inverse Hessian for BFGS, if known.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0, 0) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{climb}%
+{Use climbing image NEB}%
+{default:  False ; data type: boolean; }%
+{}
+\end{ipifield}
+\begin{ipifield}{endpoints}%
+{Geometry optimization of endpoints}%
+{}%
+{}
+\end{ipifield}
+\begin{ipifield}{ls\_options}%
+{Options for line search methods. Includes:
+                              tolerance: stopping tolerance for the search,
+                              grad\_tolerance: stopping tolerance on gradient for
+                              BFGS line search,
+                              iter: the maximum number of iterations,
+                              step: initial step for bracketing,
+                              adaptive: whether to update initial step.
+                              }%
+{}%
+{}
+\end{ipifield}
+\end{ipifield}

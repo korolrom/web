@@ -1,0 +1,14 @@
+# column   1     --> step : The current simulation time step.
+# column   2     --> time{picosecond} : The elapsed simulation time.
+# column   3     --> temperature{kelvin}(1) : The current temperature, as obtained from the MD kinetic energy.
+# column   4     --> temperature{kelvin}(2) : The current temperature, as obtained from the MD kinetic energy.
+# column   5     --> temperature{kelvin}(0) : The current temperature, as obtained from the MD kinetic energy.
+# column   6     --> temperature{kelvin}(O) : The current temperature, as obtained from the MD kinetic energy.
+# column   7     --> temperature{kelvin}(H) : The current temperature, as obtained from the MD kinetic energy.
+# column   8     --> temperature{kelvin} : The current temperature, as obtained from the MD kinetic energy.
+    0.00000000e+00     0.00000000e+00     2.25793011e+02     1.16999983e+03     8.00815258e+01     2.87466975e+02     3.11508639e+02     3.03494751e+02   
+    4.00000000e+00     1.00000000e-03     1.08050574e+02     9.28651484e+02     7.18211981e+01     2.92869412e+02     3.06823470e+02     3.02172117e+02   
+    8.00000000e+00     2.00000000e-03     7.64876933e+01     7.41053095e+02     9.35317951e+01     2.93547869e+02     3.03399075e+02     3.00115339e+02   
+    1.20000000e+01     3.00000000e-03     9.55972479e+01     6.13861922e+02     1.32488818e+02     2.94765276e+02     3.01710300e+02     2.99395292e+02   
+    1.60000000e+01     4.00000000e-03     1.56307900e+02     5.79470490e+02     1.59163781e+02     2.95598868e+02     3.02121537e+02     2.99947314e+02   
+    2.00000000e+01     5.00000000e-03     4.14287517e+01     4.93693107e+02     1.28967186e+02     2.94655225e+02     2.98986279e+02     2.97542594e+02   

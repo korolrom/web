@@ -1,0 +1,20 @@
+# column   1     --> step : The current simulation time step.
+# column   2     --> time : The elapsed simulation time.
+# column   3     --> conserved : The value of the conserved energy quantity per bead.
+# column   4     --> temperature{kelvin} : The current temperature, as obtained from the MD kinetic energy.
+# column   5     --> kinetic_md : The kinetic energy of the (extended) classical system.
+# column   6     --> kinetic_cv : The centroid-virial quantum kinetic energy of the physical system.
+# column   7     --> potential : The physical system potential energy.
+# column   8     --> kinetic_cv(H) : The centroid-virial quantum kinetic energy of the physical system.
+# column   9     --> kinetic_cv(C) : The centroid-virial quantum kinetic energy of the physical system.
+    0.00000000e+00     0.00000000e+00    -2.41258780e+01     2.98053610e+02     6.34287832e+00     2.35847011e-01    -3.67285962e+01     3.15887610e-02     2.04258250e-01   
+    1.00000000e+01     2.06706865e+02    -2.41258468e+01     2.96382114e+02     6.30588216e+00     2.32486407e-01    -3.67179487e+01     3.29395844e-02     1.99546823e-01   
+    2.00000000e+01     4.13413730e+02    -2.41259610e+01     2.96602056e+02     6.31056275e+00     2.30566815e-01    -3.67326054e+01     2.69244015e-02     2.03642414e-01   
+    3.00000000e+01     6.20120595e+02    -2.41260053e+01     3.05039195e+02     6.49011347e+00     2.30562997e-01    -3.67337143e+01     3.02477583e-02     2.00315239e-01   
+    4.00000000e+01     8.26827460e+02    -2.41260866e+01     3.09488140e+02     6.58479148e+00     2.31934362e-01    -3.67446060e+01     3.20894318e-02     1.99844930e-01   
+    5.00000000e+01     1.03353433e+03    -2.41259901e+01     3.01975153e+02     6.42490760e+00     2.39132150e-01    -3.67092680e+01     3.50809037e-02     2.04051247e-01   
+    6.00000000e+01     1.24024119e+03    -2.41262225e+01     2.95479253e+02     6.28666837e+00     2.34572499e-01    -3.67379819e+01     3.32879594e-02     2.01284540e-01   
+    7.00000000e+01     1.44694806e+03    -2.41261939e+01     3.03649635e+02     6.46054226e+00     2.31246521e-01    -3.67204242e+01     2.99873278e-02     2.01259193e-01   
+    8.00000000e+01     1.65365492e+03    -2.41263332e+01     3.00942099e+02     6.40292319e+00     2.30476157e-01    -3.67252546e+01     2.90781034e-02     2.01398054e-01   
+    9.00000000e+01     1.86036179e+03    -2.41262752e+01     2.99442111e+02     6.37100194e+00     2.40524383e-01    -3.67182964e+01     3.57961186e-02     2.04728264e-01   
+    1.00000000e+02     2.06706865e+03    -2.41264870e+01     3.02048748e+02     6.42647378e+00     2.32137116e-01    -3.67384525e+01     3.06961346e-02     2.01440981e-01   

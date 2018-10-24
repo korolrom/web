@@ -1,0 +1,21 @@
+# column   1     --> step : The current simulation time step.
+# column   2     --> time{picosecond} : The elapsed simulation time.
+# column   3     --> conserved : The value of the conserved energy quantity per bead.
+# column   4     --> temperature{kelvin} : The current temperature, as obtained from the MD kinetic energy.
+# column   5     --> kinetic_opsc : The Suzuki-Chin centroid-virial operator estimator of the quantum kinetic energy of the physical system.
+# column   6     --> kinetic_tdsc : The Suzuki-Chin centroid-virial thermodynamic estimator of the quantum kinetic energy of the physical system.
+# column   7     --> kinetic_prsc : The Suzuki-Chin primitive estimator of the quantum kinetic energy of the physical system
+# column   8     --> potential_opsc : The Suzuki-Chin operator estimator for the potential energy of the physical system.
+# column   9     --> potential_tdsc : The Suzuki-chin thermodyanmic estimator for the potential energy of the physical system.
+# column  10     --> spring : The total spring potential energy between the beads of all the ring polymers in the system.
+    0.00000000e+00     0.00000000e+00     1.24181935e+01     2.93911357e+02     9.23443312e-01     1.06553714e+00     1.49171868e+01    -2.20191822e+00    -1.91773057e+00     0.00000000e+00   
+    1.00000000e+00     2.50000000e-04     1.24202586e+01     2.78009308e+02     1.02948980e+00     1.18044682e+00     1.42308060e+01    -2.10136444e+00    -1.82336319e+00     6.95879513e-01   
+    2.00000000e+00     5.00000000e-04     1.24267944e+01     2.36505120e+02     1.31793692e+00     1.47950948e+00     1.23850090e+01    -1.86207469e+00    -1.61501800e+00     2.56033706e+00   
+    3.00000000e+00     7.50000000e-04     1.24344947e+01     1.83049349e+02     1.71111097e+00     1.84923400e+00     9.94852155e+00    -1.55851573e+00    -1.39047216e+00     5.01255070e+00   
+    4.00000000e+00     1.00000000e-03     1.24394902e+01     1.34188763e+02     2.10295944e+00     2.15536753e+00     7.64090900e+00    -1.28737698e+00    -1.25568366e+00     7.32073233e+00   
+    5.00000000e+00     1.25000000e-03     1.24399131e+01     1.03912136e+02     2.39495325e+00     2.31226935e+00     6.08923370e+00    -1.13276842e+00    -1.26802563e+00     8.85499809e+00   
+    6.00000000e+00     1.50000000e-03     1.24366840e+01     9.86314882e+01     2.53302316e+00     2.31701905e+00     5.63778474e+00    -1.12984490e+00    -1.40991006e+00     9.27927692e+00   
+    7.00000000e+00     1.75000000e-03     1.24319143e+01     1.16021590e+02     2.51763985e+00     2.22615315e+00     6.23991097e+00    -1.26421221e+00    -1.61584478e+00     8.65177157e+00   
+    8.00000000e+00     2.00000000e-03     1.24273527e+01     1.46513778e+02     2.39406503e+00     2.10797691e+00     7.51992493e+00    -1.48037056e+00    -1.81262395e+00     7.35543115e+00   
+    9.00000000e+00     2.25000000e-03     1.24242257e+01     1.78122646e+02     2.22810796e+00     2.02013451e+00     8.92416282e+00    -1.70609807e+00    -1.94189229e+00     5.94648241e+00   
+    1.00000000e+01     2.50000000e-03     1.24231983e+01     1.99783372e+02     2.07252272e+00     1.99025202e+00     9.94406990e+00    -1.88169775e+00    -1.97659564e+00     4.93271715e+00   

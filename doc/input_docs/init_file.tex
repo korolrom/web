@@ -1,0 +1,16 @@
+\section{INITFILE}
+\label{INITFILE}
+\begin{ipifield}{}%
+{This is the class to initialize from file.}%
+{data type: string; }%
+{\ipiitem{bead}%
+{The index of the bead for which the value will be set. If a negative value is specified, then all beads are assumed.}%
+{default:  -1 ; data type: integer; }%
+\ipiitem{cell\_units}%
+{The units for the cell dimensions.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{mode}%
+{The input data format. 'xyz' and 'pdb' stand for xyz and pdb input files respectively. 'chk' stands for initialization from a checkpoint file.}%
+{default: `chk'; data type: string; options: `xyz', `pdb', `chk'; }%
+}
+\end{ipifield}

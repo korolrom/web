@@ -1,0 +1,154 @@
+\section{GEOP}
+\label{GEOP}
+\begin{ipifield}{}%
+{A Geometry Optimization class implementing most of the standard methods}%
+{}%
+{\ipiitem{mode}%
+{The geometry optimization algorithm to be used}%
+{default: `lbfgs'; data type: string; options: `sd', `cg', `bfgs', `bfgstrm', `lbfgs'; }%
+}
+\begin{ipifield}{biggest\_step}%
+{The maximum step size for (L)-BFGS line minimizations.}%
+{default:  100.0 ; data type: float; }%
+{}
+\end{ipifield}
+\begin{ipifield}{scale\_lbfgs}%
+{Scale choice for the initial hessian.
+                                            0 identity.
+                                            1 Use first member of position/gradient list.
+                                            2 Use last  member of position/gradient list.}%
+{default:  2 ; data type: integer; }%
+{}
+\end{ipifield}
+\begin{ipifield}{corrections\_lbfgs}%
+{The number of past vectors to store for L-BFGS.}%
+{default:  6 ; data type: integer; }%
+{}
+\end{ipifield}
+\begin{ipifield}{tolerances}%
+{Convergence criteria for optimization. Default values are extremely conservative. Set them to appropriate values for production runs.}%
+{}%
+{}
+\end{ipifield}
+\begin{ipifield}{glist\_lbfgs}%
+{List of previous gradient differences for L-BFGS, if known.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{old\_direction}%
+{The previous direction in a CG or SD optimization.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{old\_force}%
+{The previous force in an optimization step.}%
+{dimension: force; default:  [ ] ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{invhessian\_bfgs}%
+{Approximate inverse Hessian for BFGS, if known.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0, 0) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{tr\_trm}%
+{The trust radius in trm.}%
+{dimension: length; default:  [ ] ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{hessian\_trm}%
+{Approximate Hessian for trm, if known.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0, 0) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{ls\_options}%
+{"Options for line search methods. Includes:
+                              tolerance: stopping tolerance for the search (as a fraction of the overall energy tolerance),
+                              iter: the maximum number of iterations,
+                              step: initial step for bracketing,
+                              adaptive: whether to update initial step.
+                              }%
+{}%
+{}
+\end{ipifield}
+\begin{ipifield}{old\_pos}%
+{The previous positions in an optimization step.}%
+{dimension: length; default:  [ ] ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{old\_pot}%
+{The previous potential energy in an optimization step.}%
+{dimension: energy; default:  [ ] ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{qlist\_lbfgs}%
+{List of previous position differences for L-BFGS, if known.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\end{ipifield}

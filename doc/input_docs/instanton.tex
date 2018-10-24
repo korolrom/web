@@ -1,0 +1,190 @@
+\section{INSTANTON}
+\label{INSTANTON}
+\begin{ipifield}{}%
+{A class for instanton calculations}%
+{}%
+{\ipiitem{mode}%
+{Use the full or half of the ring polymer during the optimization}%
+{default: `rate'; data type: string; options: `rate', `splitting'; }%
+}
+\begin{ipifield}{opt}%
+{The geometry optimization algorithm to be used}%
+{default: `None'; data type: string; options: `nichols', `NR', `lbfgs', `None'; }%
+{}
+\end{ipifield}
+\begin{ipifield}{hessian\_asr}%
+{Removes the zero frequency vibrational modes depending on the symmerty of the system.}%
+{default: `none'; data type: string; options: `none', `poly', `crystal'; }%
+{}
+\end{ipifield}
+\begin{ipifield}{alt\_out}%
+{Alternative output:Prints different formatting of outputs for geometry, hessian and bead potential energies.
+                                               All quantities are also accessible from typical i-pi output infrastructure. 
+                                               Default to 1, which prints every step. -1 will suppress the output (except the last one). 
+                                               Any other positive number will set the frequency (in steps) with which the quantities are 
+                                               written to file.
+                                               The instanton geometry is printed in xyz format and the distances are in angrstroms
+                                               The hessian is printed in one line with the following format:
+                                               h1\_1,h2\_1,\ldots ,hN\_1,   h2\_2,h2\_2,hN\_2,   \ldots .   ,h1\_d,h2\_d,\ldots ,hN\_d.
+                                               Where N represents the total number of replicas, d the number of dimension of each replica (3*n\_atoms) and
+                                               hi\_j means the row j of the physical hessian corresponding to the replica i. 
+                                               The physical hessian uses a convention according to the positions convention used in  i-pi. 
+                                               Example of 2 particles, the first two rows of the physical hessian reads:
+                                               'H\_x1\_x1, H\_x1\_y1, H\_x1\_z1, H\_x1\_x2, H\_x1\_y2,H\_x1\_z2'
+                                               'H\_x2\_x1, H\_x2\_y1, H\_x2\_z1, H\_x2\_x2, H\_x2\_y2,H\_x2\_z2' }%
+{default:  1 ; data type: integer; }%
+{}
+\end{ipifield}
+\begin{ipifield}{prefix}%
+{Prefix of the output files.}%
+{default: `INSTANTON'; data type: string; }%
+{}
+\end{ipifield}
+\begin{ipifield}{energy\_shift}%
+{Set the zero of energy.}%
+{dimension: energy; default:  0.0 ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+}
+\end{ipifield}
+\begin{ipifield}{delta}%
+{Initial stretch amplitude.}%
+{default:  0.1 ; data type: float; }%
+{}
+\end{ipifield}
+\begin{ipifield}{old\_pos}%
+{The previous step positions during the optimization. }%
+{dimension: length; default:  [ ] ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{old\_pot}%
+{The previous step potential energy during the optimization}%
+{dimension: energy; default:  [ ] ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{hessian}%
+{(Approximate) Hessian.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0, 0) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{corrections\_lbfgs}%
+{The number of past vectors to store for L-BFGS.}%
+{default:  20 ; data type: integer; }%
+{}
+\end{ipifield}
+\begin{ipifield}{tolerances}%
+{Convergence criteria for optimization.}%
+{}%
+{}
+\end{ipifield}
+\begin{ipifield}{scale\_lbfgs}%
+{Scale choice for the initial hessian.
+                                                       0 identity.
+                                                       1 Use first member of position/gradient list.
+                                                       2 Use last  member of position/gradient list.}%
+{default:  2 ; data type: integer; }%
+{}
+\end{ipifield}
+\begin{ipifield}{glist\_lbfgs}%
+{List of previous gradient differences for L-BFGS, if known.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{old\_direction}%
+{The previous direction in a CG or SD optimization.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{old\_force}%
+{The previous step force during the optimization}%
+{dimension: force; default:  [ ] ; data type: float; }%
+{\ipiitem{units}%
+{The units the input data is given in.}%
+{default: `automatic'; data type: string; }%
+\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{biggest\_step}%
+{The maximum step size during the optimization.}%
+{default:  0.4 ; data type: float; }%
+{}
+\end{ipifield}
+\begin{ipifield}{hessian\_update}%
+{How to update the hessian after each step.}%
+{default: `powell'; data type: string; options: `powell', `recompute'; }%
+{}
+\end{ipifield}
+\begin{ipifield}{hessian\_init}%
+{How to initialize the hessian if it is not fully provided.}%
+{default: `false'; data type: string; options: `true', `false'; }%
+{}
+\end{ipifield}
+\begin{ipifield}{ls\_options}%
+{"Options for line search methods. Includes:
+                                  tolerance: stopping tolerance for the search,
+                                  iter: the maximum number of iterations,
+                                  step: initial step for bracketing,
+                                  adaptive: whether to update initial step.
+                                  }%
+{}%
+{}
+\end{ipifield}
+\begin{ipifield}{qlist\_lbfgs}%
+{List of previous position differences for L-BFGS, if known.}%
+{default:  [ ] ; data type: float; }%
+{\ipiitem{shape}%
+{The shape of the array.}%
+{default:  (0,) ; data type: tuple; }%
+\ipiitem{mode}%
+{If 'mode' is 'manual', then the array is read from the content of 'cell' takes a 9-elements vector containing the cell matrix (row-major). If 'mode' is 'abcABC', then 'cell' takes an array of 6 floats, the first three being the length of the sides of the system parallelopiped, and the last three being the angles (in degrees) between those sides. Angle A corresponds to the angle between sides b and c, and so on for B and C. If mode is 'abc', then this is the same as for 'abcABC', but the cell is assumed to be orthorhombic. 'pdb' and 'chk' read the cell from a PDB or a checkpoint file, respectively.}%
+{default: `manual'; data type: string; options: `manual', `file'; }%
+}
+\end{ipifield}
+\begin{ipifield}{hessian\_final}%
+{Decide if we are going to compute the final big-hessian by finite difference.}%
+{default: `false'; data type: string; options: `false', `true'; }%
+{}
+\end{ipifield}
+\end{ipifield}
