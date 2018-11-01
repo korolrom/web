@@ -57,14 +57,14 @@ to your manuscript!
 
 Accelerated convergence of averages by performing Monte Carlo exchanges of configurations between parallel calculations.
 
-**Main contributors:** Riccardo Petraglia, Robert Meissner, Michele Ceriotti
+**Main contributors:** Riccardo Petraglia, Robert Meissner, Michele Ceriotti  
 **Implementation:** 
 R. Petraglia, A. Nicolaï, M. M. D. Wodrich, M. Ceriotti, C. Corminboeuf, *"Beyond static structures: Putting forth remd as a tool to solve problems in computational organic chemistry"*, J. Comput. Chem. 37(1), 83-92 (2016)  
 DOI: [10.1002/jcc.24025](dx.doi.org/10.1002/jcc.24025) --- BibTeX: [fetch](http://www.doi2bib.org/#/doi/10.1002/jcc.24025)
 **Theory:**  
-Y. Sugita, Y. Okamoto, *"Replica-exchange molecular dynamics method for protein folding"*, Chem. Phys. Lett. 314(1-2), 141–151 (1999)
-DOI: [10.1016/s0009-2614(99)01123-9](dx.doi.org/10.1016/s0009-2614(99)01123-9) --- BibTeX: [fetch](http://www.doi2bib.org/#/doi/10.1016/s0009-2614(99)01123-9)
-T. Okabe, M. Kawata, Y. Okamoto, M. Mikami, *"Replica-exchange monte carlo method for the isobaric–isothermal ensemble"*, Chem. Phys. Lett. 335(5-6), 435-439 (2001)
+Y. Sugita, Y. Okamoto, *"Replica-exchange molecular dynamics method for protein folding"*, Chem. Phys. Lett. 314(1-2), 141–151 (1999)  
+DOI: [10.1016/s0009-2614(99)01123-9](dx.doi.org/10.1016/s0009-2614(99)01123-9) --- BibTeX: [fetch](http://www.doi2bib.org/#/doi/10.1016/s0009-2614(99)01123-9)  
+T. Okabe, M. Kawata, Y. Okamoto, M. Mikami, *"Replica-exchange monte carlo method for the isobaric–isothermal ensemble"*, Chem. Phys. Lett. 335(5-6), 435-439 (2001)  
 DOI: [10.1016/ s0009-2614(01)00055-0](dx.doi.org/10.1016/s0009-2614(01)00055-0) --- BibTeX: [fetch](http://www.doi2bib.org/#/doi/10.1016/s0009-2614(01)00055-0)
 
 
@@ -160,13 +160,12 @@ W. H. Press, *"Numerical Recipes: The Art of Scientific Computing"*, (Cambridge 
 Harmonic vibrations through finite differences for simple evaluation of the harmonic
 Hessian.
 
-**Main contributors:** Kapil, Bienvenue
+**Main contributors:** Kapil, Bienvenue  
 **Implementation:**  
 M. Rossi, P. Gasparotto, M. Ceriotti, *"Anharmonic and Quantum Fluctuations in Molecular
 Crystals: A First-Principles Study of the Stability of Paracetamol"*, Phs. Rev. Lett. 117,
-115702 (2016)  
+115702 (2016)   
 DOI: [10.1103/PhysRevLett.117.115702](dx.doi.org/10.1103/PhysRevLett.117.115702) --- BibTeX: [fetch](http://www.doi2bib.org/#/doi/10.1103/PhysRevLett.117.115702)  
-**Theory:**  
 
 
 ### Multiple Time Step integrators
@@ -180,7 +179,7 @@ DOI: [10.1063/1.4941091](http://dx.doi.org/10.1063/1.4941091) --- BibTeX: [fetch
 **Theory:**  
 M.Tuckerman, B.J.Berne *"Reversible multiple time scale molecular dynamics"*, J. Chem. Phys. 97, 1990 (1992)  
 DOI: [10.1063/1.463137](http://dx.doi.org/10.1063/1.463137) --- BibTeX: [fetch](http://www.doi2bib.org/bib/10.1063%2F1.463137) 
- 
+  
 ### Ring-polymer instantons
 
 Semiclassical instanton theory is an efficient way of simulating tunneling contributions to reaction rate constants and tunneling splittings,
@@ -188,9 +187,9 @@ based on a well-defined dominant tunneling pathway.  It can  be much more
 efficient than RPMD rate theory, but it is not applicable to condensed phases and includes anharmonicities only along the reaction coordinate.
 
 **Main contributors:** Yair Litman, Jeremy O. Richardson, Mariana Rossi  
-**Implementation:**
-Y.  Litman,  J.  O.  Richardson,  T.  Kumagai,  M.  Rossi,  *Elucidating the Quantum Dynamics of Intramolecular Double Hydrogen Transfer in Porphycene*, arXiv:1810.05681 (2018).
-V. Kapil et al. *i-PI 2.0: A Universal Force Engine for AdvancedMolecular Simulations*, Comp. Phys. Comm. (2018)
+**Implementation:**  
+Y.  Litman,  J.  O.  Richardson,  T.  Kumagai,  M.  Rossi,  *Elucidating the Quantum Dynamics of Intramolecular Double Hydrogen Transfer in Porphycene*, arXiv:1810.05681 (2018).  
+V. Kapil et al. *i-PI 2.0: A Universal Force Engine for AdvancedMolecular Simulations*, Comp. Phys. Comm. (2018)  
 **Theory:**  
 W. H. Miller, *Semiclassical limit of quantum mechanical transition state
 theory  for  nonseparable  systems*,  J.  Chem.  Phys.  62(5) 1899–1906 (1975)  
@@ -199,7 +198,7 @@ DOI: [10.1063/1.430676](dx.doi.org/10.1063/1.430676) --- BibTeX:
 J. O. Richardson, *Ring-polymer instanton theory*, Int. Rev. Phys. Chem. 37,
 171 (2018)  
 DOI: [10.1080/0144235X.2018.1472353](doi.org/10.1080/0144235X.2018.1472353) ---
-BibTeX: [fetch](doi2bib.org/#/doi/10.1080/0144235X.2018.1472353) 
+BibTeX: [fetch](doi2bib.org/#/doi/10.1080/0144235X.2018.1472353)  
 
 ### Thermostatted RPMD
 
@@ -219,7 +218,7 @@ DOI: [10.1063/1.1777575](https://doi.org/10.1063/1.1777575) --- BibTeX: [fetch](
 This is a modified form of Langevin dynamics in which sluggish high-friction behaviour is corrected for by flipping a particle's momentum when the action of the thermostat causes it to change direction.
 
 **Main contributors:** Mahdi Hijazi, David Wilkins, Michele Ceriotti  
-**Implementation and Theory:**  
+**Implementation and Theory:**   
 M. Hijazi, D. M. Wilkins, *"Fast-forward Langevin dynamics with momentum flips"*, J. Chem. Phys. 148, 184109 (2018)  
 DOI: [10.1063/1.5029833](dx.doi.org/10.1063/1.5029833) --- BibTeX: [fetch](https://www.doi2bib.org/bib/10.1063%2F1.5029833)  
 
@@ -242,7 +241,7 @@ A direct estimator to evaluate the isotope fractionation ratios using a single o
 
 **Main contributors:** Bingqing Cheng, Michele Ceriotti  
 **Implementation and Theory:**  
-B.Cheng, M.Ceriotti, "Direct path integral estimators for isotope fractionation ratios." The Journal of chemical physics 141, 244112 (2015)
+B.Cheng, M.Ceriotti, "Direct path integral estimators for isotope fractionation ratios." The Journal of chemical physics 141, 244112 (2015)  
 DOI: [10.1063/1.4904293](http://dx.doi.org/10.1063/1.4904293) --- BibTeX: [fetch](http://www.doi2bib.org/bib/10.1063%2F1.4904293)
 
 
