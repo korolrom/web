@@ -23,15 +23,9 @@ homepage: true
 ---
 
 
-**We are cleaning up the [official i-PI repo](https://github.com/i-pi/i-pi) to remove stray files and start fresh with more collaborative and clean
-coding in the future. A version with the full history will be stored on https://github.com/i-pi/i-pi-archive. 
-Please update your local copy and make further requests for features as pull requests from a clean fork.
-**
-
-**The second release of i-PI is ready for download. Several new features including replica exchange molecular dynamics, instanton calculations, perturbed path integrals and open path integrals have been implemented and merged to the master branch in the [official i-PI repo](https://github.com/i-pi/i-pi).
+**The second release of i-PI is ready for download. Several new features including replica exchange molecular dynamics, instanton calculations, perturbed path integrals and open path integrals have been implemented and merged to the master branch in the [official i-PI repo](https://github.com/i-pi/i-pi), which has also been stripped of the (rather intricate) git history.
 The release is accompanied by the publication of a [reference paper on Computer Physics Communications](https://doi.org/10.1016/j.cpc.2018.09.020), that constitutes the new default reference to acknowledge use of this release.
-Please let us know if you find any remaining bug so that we can polish the release further!**
-
+Further development of i-PI will happen on the official repository. You are invited to fork and contribute back by means of pull requests.**
 
 
 i-PI is a universal force engine interface
@@ -55,7 +49,7 @@ or more instances of an external code, acting as clients.
 i-PI is free software, distributed under a dual MIT/GPLv3 licence. You
 are welcome to dowload, use, modify and redistribute it. If you find it
 useful for your research, a citation to
-[Ceriotti, More, Manolopoulos, Comp. Phys. Comm. 185, 1019-1026 (2014)](http://dx.doi.org/10.1016/j.cpc.2013.10.027)
+[Kapil et al., Comp. Phys. Comm. (2018)](https://doi.org/10.1016/j.cpc.2018.09.020)
 would be appreciated.
 
 As of today, the following codes provide out-of-the-box an i-PI interface: 
@@ -73,4 +67,4 @@ we are always glad to help!
 
 If you have questions about running i-PI calculations, or including new features
 into the code, you can get help on the [user forum](https://groups.google.com/forum/#!forum/ipi-users), 
-or on the [github developers branch](https://github.com/cosmo-epfl/i-pi-dev).
+or on the [github pages](https://github.com/i-pi/i-pi).
