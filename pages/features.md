@@ -245,7 +245,14 @@ B.Cheng, M.Ceriotti, "Direct path integral estimators for isotope fractionation 
 DOI: [10.1063/1.4904293](http://dx.doi.org/10.1063/1.4904293) --- BibTeX: [fetch](http://www.doi2bib.org/bib/10.1063%2F1.4904293)
 
 
-### Free-energy Perturbation Estimators for Isotope Fractionation
+### Free-energy Perturbation Estimators for Isotope Fractionation  
+
+Computing isotope fractionation using the thermodynamic integration method requires evaluating the quantum kinetic energy of several systems containing atoms that have different fictitious masses between the physical masses of two isotopes, meaning that a number of PIMD simulations have to be performed. With the help of re-weighting, one has the option of running just one set of simulation with a certain fictitious mass, and obtain the quantum kinetic energy for systems with other masses.  
+
+**Main contributors:** Michele Ceriotti, Thomas Markland  
+**Theory and implementation:**  
+Michele Ceriotti, Thomas E. Markland, "Efficient methods and practical guidelines for simulating isotope effects." The Journal of chemical physics 138(1), 014112 (2013).  
+DOI: [10.1063/1.4772676](dx.doi.org/10.1063/1.4772676) --- BibTeX: [fetch](http://www.doi2bib.org/#/doi/10.1063/1.4772676)
 
 
 ### Quantum Alchemical Transformation
