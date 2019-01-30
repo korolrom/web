@@ -48,9 +48,10 @@ or more instances of an external code, acting as clients.
 
 i-PI is free software, distributed under a dual MIT/GPLv3 licence. You
 are welcome to dowload, use, modify and redistribute it. If you find it
-useful for your research, a citation to
-[Kapil et al., Comp. Phys. Comm. (2018)](https://doi.org/10.1016/j.cpc.2018.09.020)
-would be appreciated.
+useful for your research, a citation would be appreciated to
+
+[Kapil et al., Comp. Phys. Comm. 236, 214--223 (2018)](https://doi.org/10.1016/j.cpc.2018.09.020)
+
 
 As of today, the following codes provide out-of-the-box an i-PI interface: 
 [CP2K](https://www.cp2k.org/),
