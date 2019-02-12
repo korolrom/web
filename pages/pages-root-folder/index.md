@@ -24,7 +24,7 @@ homepage: true
 
 
 **The second release of i-PI is ready for download. Several new features including replica exchange molecular dynamics, instanton calculations, perturbed path integrals and open path integrals have been implemented and merged to the master branch in the [official i-PI repo](https://github.com/i-pi/i-pi), which has also been stripped of the (rather intricate) git history.
-The release is accompanied by the publication of a [reference paper on Computer Physics Communications](https://doi.org/10.1016/j.cpc.2018.09.020), that constitutes the new default reference to acknowledge use of this release.
+The release is accompanied by the publication of a [reference paper on Computer Physics Communications](https://doi.org/10.1016/j.cpc.2018.09.020), that constitutes the new default reference to acknowledge use of this release. The reference paper is [also freely available in arXiv](https://arxiv.org/abs/1808.03824). 
 Further development of i-PI will happen on the official repository. You are invited to fork and contribute back by means of pull requests.**
 
 
