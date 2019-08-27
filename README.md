@@ -1,2 +1,2 @@
 This is the i-PI website, based on the feeling responsive theme for Jekyll
-Let's see if modifing directly from github I will trig a rebuild...
+Nothing very sophisticated, just a basic list of features, credits, and a link to the offline documentation.
