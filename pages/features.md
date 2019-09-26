@@ -28,6 +28,7 @@ Finding these features readily available is saving you weeks of work:
 reward the developers by spending 15 seconds to add one more citation
 to your manuscript!
 
+* [Cayley modification of free RP step](#cayley-modification-of-free-RP-step)
 * [Replica Exchange MD](#replica-exchange-md)
 * [Thermodynamic integrations](#thermodynamic-integrations) 
 * [Finite-differences Suzuki-Chin PIMD](#finite-differences-suzuki-chin-pimd) 
@@ -53,6 +54,19 @@ to your manuscript!
 * [Path Integrals at Constant Pressure](#path-integrals-at-constant-pressure)
 * [Path Integral Molecular Dynamics](#path-integral-molecular-dynamics)
 
+### Cayley modification of free RP step
+
+We replace the exact ring-polymer evolution with the Cayley transform. 
+This modification makes the overall timestep strongly stable and thus
+avoids numerical resonance instabilities, that plague microcanonical PIMD/RPMD
+and non-ergodicity of resonant modes in t-RPMD.
+Algorithm complexity, order of accuracy and computational cost remain the same,
+while more effective modified integrator allows for higher efficiency of the simulations.  
+**Main contributors:** Roman Korol, Thomas F. Miller III
+**Implementation and Theory:**  
+R. Korol, N. Bou-Rabee, T.F. Miller III *"Cayley modiﬁcation for strongly stable path-integral and ring-polymer molecular dynamics"*, J. Chem. Phys. 151(12), 124103 (2019)  
+DOI: [10.1063/1.5120282](dx.doi.org/10.1063/1.5120282) --- BibTeX: [fetch](http://www.doi2bib.org/#/doi/10.1063/1.5120282)  
+
 ### Replica Exchange MD
 
 Accelerated convergence of averages by performing Monte Carlo exchanges of configurations between parallel calculations.
@@ -65,7 +79,7 @@ DOI: [10.1002/jcc.24025](dx.doi.org/10.1002/jcc.24025) --- BibTeX: [fetch](http:
 Y. Sugita, Y. Okamoto, *"Replica-exchange molecular dynamics method for protein folding"*, Chem. Phys. Lett. 314(1-2), 141–151 (1999)  
 DOI: [10.1016/s0009-2614(99)01123-9](dx.doi.org/10.1016/s0009-2614(99)01123-9) --- BibTeX: [fetch](http://www.doi2bib.org/#/doi/10.1016/s0009-2614(99)01123-9)  
 T. Okabe, M. Kawata, Y. Okamoto, M. Mikami, *"Replica-exchange monte carlo method for the isobaric–isothermal ensemble"*, Chem. Phys. Lett. 335(5-6), 435-439 (2001)  
-DOI: [10.1016/ s0009-2614(01)00055-0](dx.doi.org/10.1016/s0009-2614(01)00055-0) --- BibTeX: [fetch](http://www.doi2bib.org/#/doi/10.1016/s0009-2614(01)00055-0)
+DOI: [10.1016/s0009-2614(01)00055-0](dx.doi.org/10.1016/s0009-2614(01)00055-0) --- BibTeX: [fetch](http://www.doi2bib.org/#/doi/10.1016/s0009-2614(01)00055-0)
 
 
 ### Thermodynamic integrations 
